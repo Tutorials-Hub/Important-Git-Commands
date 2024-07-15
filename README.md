@@ -1,73 +1,117 @@
 # Important Git Commands for Software Engineers
 
-Git is an essential tool for software engineers, enabling efficient version control, collaboration, and project management. Whether you're working on a solo project or part of a large team, mastering Git commands is crucial for streamlining your development workflow. This guide covers the most common Git commands you'll need, providing a solid foundation for managing your codebase, tracking changes, and coordinating with other developers. By familiarizing yourself with these commands, you can enhance your productivity and ensure smooth project progress. Let's dive into the key Git commands every software engineer should know.
+Git is an essential tool for software developers and programmers, enabling efficient version control, collaboration, and project management. Whether you're working on a solo project or part of a large team, mastering Git commands is crucial for streamlining your development workflow. This guide covers the most common Git commands you'll need, providing a solid foundation for managing your codebase, tracking changes, and coordinating with other developers. By familiarizing yourself with these commands, you can enhance your productivity and ensure smooth project progress. Let's dive into the key Git commands every software developers should know.
 
 Configuration
 
-1. git config
-Purpose: Configure Git settings, such as user name and email.
-
+### 1. git config
+`Purpose: Configure Git settings, such as user name and email.`
+```
 Example: git config --global user.name "Your Name"
-2. git init
+```
+### 2. git init
+`
 Purpose: Initialize a new Git repository.
-
+`
+```
 Example: git init
-3. git clone
+```
+### 3. git clone
+`
 Purpose: Clone an existing repository.
-
+`
+```
 Example: git clone https://github.com/user/repo.git
-4. git status
+```
+### 4. git status
+`
 Purpose: Show the working directory and staging area status.
-
+`
+```
 Example: git status
-5. git add
+```
+### 5. git add
+`
 Purpose: Add file contents to the index (staging area).
-
+`
+```
 Example: git add . (add all files)
-6. git commit
+```
+### 6. git commit
+`
 Purpose: Record changes to the repository.
-
+`
+```
 Example: git commit -m "Commit message"
-7. git push
+```
+### 7. git push
+`
 Purpose: Update remote refs along with associated objects.
-
+`
+```
 Example: git push origin main
-8. git pull
+```
+### 8. git pull
+`
 Purpose: Fetch from and integrate with another repository or local branch.
-
+`
+```
 Example: git pull origin main
-9. git branch
+```
+### 9. git branch
+`
 Purpose: List, create, or delete branches.
-
+`
+```
 Example: git branch new-branch (create new branch)
-10. git checkout
+```
+### 10. git checkout
+`
 Purpose: Switch branches or restore working tree files.
-
+`
+```
 Example: git checkout new-branch (switch to branch)
-11. git switch
+```
+### 11. git switch
+`
 Purpose: Switch branches.
-
+`
+```
 Example: git switch new-branch
-12. git merge
+```
+### 12. git merge
+`
 Purpose: Join two or more development histories together.
-
+`
+```
 Example: git merge new-branch (merge new-branch into current branch)
-13. git rebase
+```
+### 13. git rebase
+`
 Purpose: Reapply commits on top of another base tip.
-
+`
+```
 Example: git rebase main
-14. git log
+```
+### 14. git log
+`
 Purpose: Show commit logs.
-
+`
+```
 Example: git log --oneline
-15. git diff
+```
+### 15. git diff
+`
 Purpose: Show changes between commits, commit and working tree, etc.
-
+`
+```
 Example: git diff (show unstaged changes)
-16. git show
-Purpose: Show various types of objects.
-
+```
+### 16. git show
+`Purpose: Show various types of objects.`
+```
 Example: git show HEAD (show changes in the last commit)
+```
 17. git stash
 Purpose: Stash the changes in a dirty working directory away.
 
