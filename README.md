@@ -112,226 +112,381 @@ Example: git diff (show unstaged changes)
 ```
 Example: git show HEAD (show changes in the last commit)
 ```
-17. git stash
+### 17. git stash
+`
 Purpose: Stash the changes in a dirty working directory away.
-
+`
+```
 Example: git stash
-18. git stash pop
+```
+### 18. git stash pop
+`
 Purpose: Apply the changes recorded in the stash to the working directory.
-
+`
+```
 Example: git stash pop
-19. git clean
+```
+### 19. git clean
+`
 Purpose: Remove untracked files from the working directory.
-
+`
+```
 Example: git clean -fd
-20. git remote
+```
+### 20. git remote
+`
 Purpose: Manage set of tracked repositories.
-
+`
+```
 Example: git remote add origin https://github.com/user/repo.git
-21. git fetch
+```
+### 21. git fetch
+`
 Purpose: Download objects and refs from another repository.
-
+`
+```
 Example: git fetch origin
-22. git remote -v
+```
+### 22. git remote -v
+`
 Purpose: Show the URLs that a remote name corresponds to.
-
+`
+```
 Example: git remote -v
-23. git tag
+```
+### 23. git tag
+`
 Purpose: Create, list, delete, or verify a tag object.
-
+`
+```
 Example: git tag -a v1.0 -m "Version 1.0"
-24. git push origin --tags
+```
+### 24. git push origin --tags
+`
 Purpose: Push all tags to the remote repository.
-
+`
+```
 Example: git push origin --tags
-25. git reset
-Purpose: Reset current HEAD to the specified state.
-
-Example: git reset --hard HEAD~1 (reset to previous commit)
-26. git revert
+```
+### 25. git reset
+`
+Purpose: Reset the current HEAD to the specified state.
+`
+```
+Example: git reset --hard HEAD~1 (reset to the previous commit)
+```
+### 26. git revert
+`
 Purpose: Create a new commit that undoes the changes from a previous commit.
-
+`
+```
 Example: git revert HEAD
-27. git checkout --
+```
+### 27. git checkout --
+`
 Purpose: Discard changes in the working directory.
-
+`
+```
 Example: git checkout -- file.txt (discard changes in file.txt)
-28. git cherry-pick
+```
+### 28. git cherry-pick
+`
 Purpose: Apply the changes introduced by some existing commits.
-
+`
+```
 Example: git cherry-pick <commit-hash>
-29. git branch -d
+```
+### 29. git branch -d
+`
 Purpose: Delete a branch.
-
+`
+```
 Example: git branch -d branch-name
-30. git branch -D
+```
+### 30. git branch -D
+`
 Purpose: Force delete a branch.
-
+`
+```
 Example: git branch -D branch-name
-31. git merge --no-ff
+```
+### 31. git merge --no-ff
+`
 Purpose: Create a merge commit even when the merge resolves as a fast-forward.
-
+`
+```
 Example: git merge --no-ff new-branch
-32. git rebase -i
+```
+### 32. git rebase -i
+`
 Purpose: Start an interactive rebase.
-
+`
+```
 Example: git rebase -i HEAD~3
-33. git diff --staged
+```
+### 33. git diff --staged
+`
 Purpose: Show changes between the index and the last commit.
-
+`
+```
 Example: git diff --staged
-34. git blame
-
+```
+### 34. git blame
+`
 Purpose: Show what revision and author last modified each line of a file.
+`
+```
 Example: git blame file.txt
-
-35. git log --graph
+```
+### 35. git log --graph
+`
 Purpose: Show a graph of the commit history.
-
+`
+```
 Example: git log --graph --oneline
-36. git reflog
+```
+### 36. git reflog
+`
 Purpose: Show a log of all references.
-
+`
+```
 Example: git reflog
-37. git stash list
+```
+### 37. git stash list
+`
 Purpose: List all stashes.
-
+`
+```
 Example: git stash list
-38. git stash apply
+```
+### 38. git stash apply
+`
 Purpose: Apply a stash to the working directory.
-
+`
+```
 Example: git stash apply stash@{1}
-39. git stash drop
+```
+### 39. git stash drop
+`
 Purpose: Remove a single stash entry from the list of stashes.
-
+`
+```
 Example: git stash drop stash@{1}
-40. git remote show
+```
+### 40. git remote show
+`
 Purpose: Show information about the remote repository.
-
+`
+```
 Example: git remote show origin
-41. git remote rm
+```
+### 41. git remote rm
+`
 Purpose: Remove a remote.
-
+`
+```
 Example: git remote rm origin
-42. git pull --rebase
+```
+### 42. git pull --rebase
+`
 Purpose: Fetch and rebase the current branch on top of the upstream branch.
-
+`
+```
 Example: git pull --rebase origin main
-43. git fetch --all
-
+```
+### 43. git fetch --all
+`
 Purpose: Fetch all remotes.
+`
+```
 Example: git fetch --all
-44. git bisect
+```
+### 44. git bisect
+`
 Purpose: Use binary search to find the commit that introduced a bug.
-
+`
+```
 Example: git bisect start
-45. git submodule
+```
+### 45. git submodule
+`
 Purpose: Initialize, update, or inspect submodules.
-
+`
+```
 Example: git submodule update --init
-46. git archive
+```
+### 46. git archive
+`
 Purpose: Create an archive of files from a named tree.
-
+`
+```
 Example: git archive --format=tar HEAD > archive.tar
-47. git shortlog
+```
+### 47. git shortlog
+`
 Purpose: Summarize git log output.
-
+`
+```
 Example: git shortlog -s -n
-48. git describe
-
+```
+### 48. git describe
+`
 Purpose: Give an object a human-readable name based on an available ref.
+`
+```
 Example: git describe --tags
-49. git rev-parse
+```
+### 49. git rev-parse
+`
 Purpose: Parse revision (or other objects) and retrieve its hash.
-
+`
+```
 Example: git rev-parse HEAD
-50. git tag -d
+```
+### 50. git tag -d
+`
 Purpose: Delete a tag from the local repository.
-
+`
+```
 Example: git tag -d v1.0
-51. git checkout -b
+```
+### 51. git checkout -b
+`
 Purpose: Create and switch to a new branch.
-
+`
+```
 Example: git checkout -b new-branch
-52. git push origin --delete
+```
+### 52. git push origin --delete
+`
 Purpose: Delete a remote branch.
-
+`
+```
 Example: git push origin --delete branch-name
-53. git cherry
+```
+### 53. git cherry
+`
 Purpose: Find commits not merged upstream.
-
+`
+```
 Example: git cherry -v
-54. git rm
+```
+### 54. git rm
+`
 Purpose: Remove files from the working tree and from the index.
-
+`
+```
 Example: git rm file.txt
-55. git mv
+```
+### 55. git mv
+`
 Purpose: Move or rename a file, directory, or symlink.
-
+`
+```
 Example: git mv oldname.txt newname.txt
-.56 git reset HEAD
+```
+### 56. git reset HEAD
+`
 Purpose: Unstage changes.
-
+`
+```
 Example: git reset HEAD file.txt
-57. git log -p
+```
+### 57. git log -p
+`
 Purpose: Show changes over time for a specific file.
-
+`
+```
 Example: git log -p file.txt
-58. git diff --cached
+```
+### 58. git diff --cached
+`
 Purpose: Show changes between the index and the last commit (same as --staged).
-
+`
+```
 Example: git diff --cached
-59. git apply
+```
+### 59. git apply
+`
 Purpose: Apply a patch to files and/or to the index.
-
+`
+```
 Example: git apply patch.diff
-60. git format-patch
+```
+### 60. git format-patch
+`
 Purpose: Prepare patches for e-mail submission.
-
+`
+```
 Example: git format-patch -1 HEAD
-61. git am
+```
+### 61. git am
+`
 Purpose: Apply a series of patches from a mailbox.
-
+`
+```
 Example: git am < patch.mbox
-62. git cherry-pick --continue
+```
+### 62. git cherry-pick --continue
+`
 Purpose: Resume cherry-picking after resolving conflicts.
-
+`
+```
 Example: git cherry-pick --continue
-63. git fsck
+```
+### 63. git fsck
+`
 Purpose: Verify the connectivity and validity of objects in the database.
-
+`
+```
 Example: git fsck
-64. git gc
-Purpose: Cleanup unnecessary files and optimize the local repository.
-
+```
+### 64. git gc
+`
+Purpose: Clean up unnecessary files and optimize the local repository.
+`
+```
 Example: git gc
-65. git prune
+```
+### 65. git prune
+`
 Purpose: Remove unreachable objects from the object database.
-
+`
+```
 Example: git prune
-66. git notes
+```
+### 66. git notes
+`
 Purpose: Add or inspect object notes.
-
+`
+```
 Example: git notes add -m "Note message"
-67. git whatchanged
+```
+### 67. git whatchanged
+`
 Purpose: Show what changed, similar to git log.
-
+`
+```
 Example: git whatchanged
-*68. git show-branch *
+```
+### 68. git show-branch
+`
 Purpose: Show branches and their commits.
-
+`
+```
 Example: git show-branch
-69. git verify-tag
+```
+### 69. git verify-tag
 `
 Purpose: Check the GPG signature of tags.
 `
 ```
 Example: git verify-tag v1.0
 ```
-70. git show-ref
+### 70. git show-ref
 `
 Purpose: List references in a local repository.
 `
 ```
-Example: git show-ref`
+Example: git show-ref
 ```
