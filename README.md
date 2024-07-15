@@ -278,10 +278,16 @@ Purpose: Show branches and their commits.
 
 Example: git show-branch
 69. git verify-tag
+`
 Purpose: Check the GPG signature of tags.
-
+`
+```
 Example: git verify-tag v1.0
+```
 70. git show-ref
+`
 Purpose: List references in a local repository.
-
-`Example: git show-ref`
+`
+```
+Example: git show-ref`
+```
